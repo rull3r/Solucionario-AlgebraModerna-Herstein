@@ -1,0 +1,58 @@
+\documentclass[10pt,a4paper]{jhwhw}
+\usepackage[utf8]{inputenc}
+%Paquetes Necesarios
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{titling}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{latexsym}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{fancybox}
+\usepackage{xparse}
+%Quitar el identado de todos los parrafos
+\setlength{\parindent}{0cm}
+%Para agregar el identado en cada item de enumerate o cualquier otro, usar [\hspace{1cm}(a)]
+
+%Comandos de Letras
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+%Informacion del del autor del libro y localizacion
+\author{Autor: \href{https://www.facebook.com/ruller}{Raúl García}\\Pagina Web: \href{https://rull3r.github.io/}{MateTips}\\Correo: rull3r@hotmail.com}
+\date{Venezuela\\ \today \\}
+\title{Solucionario \\\href{https://books.google.co.ve/books?id=N0DrAAAACAAJ}{Álgebra Moderna - I.N. Herstein}\\}
+%Para el indice alfabetico
+\makeindex
+
+%Marca de agua en el documento
+\usepackage{draftwatermark}
+\SetWatermarkText{\textsc{\href{https://rull3r.github.io/}{Visitame en MateTips}}} % por defecto Draft 
+\SetWatermarkScale{1} % para que cubra toda la página
+%\SetWatermarkColor[rgb]{1,0,0} % por defecto gris claro
+\SetWatermarkAngle{55} % respecto a la horizontal
+
+\begin{document}
+	
+\problema{ }\label{pro:1}
+	\begin{enumerate}[\hspace{1cm}(a)]
+		\item  Si $A$ es un subconjunto de $B$ y $B$ es un subconjunto de $C$, pruébese que $A$ es un subconjunto de $C$.
+		\item  Si $B \subset A$ pruébese que $A\cup B=A$ y recíprocamente.
+		\item  Si $B \subset A$ pruébese que para cualquier conjunto $C$ se tiene $B \cup C \subset A \cup C$ y $B \cap A \subset A \cap B$.
+	\end{enumerate}
+	\solution 
+	\part
+	Sea $x\in A$, como $A \subset B$ entonces $x\in B$, a su vez, $B \subset C$ luego $x\in C$ \QEPD
+	\part
+	Sea $x \in A \cup B$ entonces $x\in A$ o $x\in B$, como $B \subset A$ luego $x \in A$, por otro lado, tenemos $x \in A$ pero $B \subset A$ entonces $x \in A \cup B$ \QEPD 
+	\part
+	Sea $x \in B \cup C$ entonces $x\in B$ o $x\in C$, pero $B \subset A$ por lo tanto $x \in A$ o $x\in C$ $\Rightarrow$ $x\in A \cup C$  , por otro lado tenemos que $x \in B \cap C$ entonces $x\in B$ y $x\in C$, con $B \subset A$ concluimos que $x\in A$ y $x\in C$ $\Rightarrow$ $x\in A \cap C$ \QEPD
+\end{document}
