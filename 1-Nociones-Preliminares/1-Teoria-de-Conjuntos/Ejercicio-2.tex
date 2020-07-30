@@ -1,0 +1,55 @@
+\documentclass[10pt,a4paper]{jhwhw}
+\usepackage[utf8]{inputenc}
+%Paquetes Necesarios
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{titling}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{latexsym}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{fancybox}
+\usepackage{xparse}
+%Quitar el identado de todos los parrafos
+\setlength{\parindent}{0cm}
+%Para agregar el identado en cada item de enumerate o cualquier otro, usar [\hspace{1cm}(a)]
+
+%Comandos de Letras
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+%Informacion del del autor del libro y localizacion
+\author{Autor: \href{https://www.facebook.com/ruller}{Raúl García}\\Pagina Web: \href{https://rull3r.github.io/}{MateTips}\\Correo: rull3r@hotmail.com}
+\date{Venezuela\\ \today \\}
+\title{Solucionario \\\href{https://books.google.co.ve/books?id=N0DrAAAACAAJ}{Álgebra Moderna - I.N. Herstein}\\}
+%Para el indice alfabetico
+\makeindex
+
+%Marca de agua en el documento
+\usepackage{draftwatermark}
+\SetWatermarkText{\textsc{\href{https://rull3r.github.io/}}} % por defecto Draft 
+\SetWatermarkScale{1} % para que cubra toda la página
+%\SetWatermarkColor[rgb]{1,0,0} % por defecto gris claro
+\SetWatermarkAngle{55} % respecto a la horizontal
+
+\begin{document}
+	
+\problema{ }\label{pro:2}
+	\begin{enumerate}[\hspace{1cm}(a)]
+		\item Pruébese que $A \cap B=B \cap A$ y $A \cup B=B \cup A$.
+		\item Pruébese que $\left( A \cap B\right)  \cap C=A \cap \left( B \cap C\right) $.
+	\end{enumerate}
+	\solution 
+	\part
+	Sea $x \in A \cap B$ entonces $x \in A$ y $x\in B$ $\Rightarrow$ $x \in B$ y $x\in A$ por lo tanto $x \in B \cap A$, de manera análoga, tenemos que $x \in B \cap A$ entonces $x \in B$ y $x\in A$ $\Rightarrow$ $x \in A$ y $x\in B$, por lo tanto, $x \in A \cap B$, en conclusión $A \cap B=B \cap A$.\newline\newline	Para la conmutatividad en la unión, sea $x \in A \cup B$ entonces $x \in A$ o $x\in B$ $\Rightarrow$ $x \in B$ o $x\in A$ por lo tanto $x \in B \cup A$, de manera análoga, tenemos que $x \in B \cup A$ entonces $x \in B$ o $x\in A$ $\Rightarrow$ $x \in A$ o $x\in B$, por lo tanto, $x \in A \cup B$, en conclusión $A \cup B=B \cup A$ \QEPD
+	\part
+	Sea $x \in \left( A \cap B\right) \cap	C$ entonces $x \in \left( A \cap B\right)$ y $x\in C$ $\Rightarrow$ $x \in A$ y $x \in B$ y $x\in C$ luego $x \in A$ y $x \in \left( B \cap C\right) \Rightarrow x \in A \cap \left( B \cap	C\right) $, de manera análoga, sea $x \in A \cap \left( B \cap	C\right) $ entonces  $x \in \left( B \cap C\right) \Rightarrow x \in A$ y $x \in B$ y $x\in C $ luego $x \in \left( A \cap B\right)$ y $x\in C$ $\Rightarrow$ $x \in \left( A \cap B\right) \cap	C$ en conclusión $\left( A \cap B\right)  \cap C=A \cap \left( B \cap C\right) $ \QEPD
+\end{document}
