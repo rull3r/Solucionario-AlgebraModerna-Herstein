@@ -10,7 +10,7 @@ El solucionario está organizado en capítulos y secciones. A continuación se m
   - :orange_book: Teoría de conjuntos
     - :pencil: [Ejercicio 1](https://rull3r.github.io/2015-01-04-AlgebraModerna-Herstein-1-1-1/)
     - :pencil: [Ejercicio 2](https://rull3r.github.io/2015-01-06-AlgebraModerna-Herstein-1-1-2/)
-    - :pencil: [Ejercicio 2](https://rull3r.github.io/2024-05-09-AlgebraModerna-Herstein-1-1-3//)
+    - :pencil: [Ejercicio 3](https://rull3r.github.io/2024-05-09-AlgebraModerna-Herstein-1-1-3/)
 
 ¡No dudes en explorar los diferentes capítulos y secciones para encontrar las soluciones que necesitas! :bulb:
 
